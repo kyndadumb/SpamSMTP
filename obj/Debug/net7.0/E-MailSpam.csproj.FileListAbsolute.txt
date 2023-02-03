@@ -1,0 +1,15 @@
+C:\Users\fbenn\Documents\E-MailSpam\bin\Debug\net7.0\E-MailSpam.exe
+C:\Users\fbenn\Documents\E-MailSpam\bin\Debug\net7.0\E-MailSpam.deps.json
+C:\Users\fbenn\Documents\E-MailSpam\bin\Debug\net7.0\E-MailSpam.runtimeconfig.json
+C:\Users\fbenn\Documents\E-MailSpam\bin\Debug\net7.0\E-MailSpam.dll
+C:\Users\fbenn\Documents\E-MailSpam\bin\Debug\net7.0\E-MailSpam.pdb
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.csproj.AssemblyReference.cache
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.AssemblyInfoInputs.cache
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.AssemblyInfo.cs
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.csproj.CoreCompileInputs.cache
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.dll
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\refint\E-MailSpam.dll
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.pdb
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\E-MailSpam.genruntimeconfig.cache
+C:\Users\fbenn\Documents\E-MailSpam\obj\Debug\net7.0\ref\E-MailSpam.dll
