@@ -19,7 +19,7 @@ namespace EmailSender
                 {
                     for (int i = 0; i < requestCount / threadCount; i++)
                     {
-                        // Verbindung zum E-Mail-Server herstellen
+                        // connect to server
                         TcpClient client = new TcpClient("10.0.0.23", 25);
                         Stream stream = client.GetStream();
                         StreamReader reader = new StreamReader(stream);
@@ -30,16 +30,16 @@ namespace EmailSender
                         string response = reader.ReadLine();
                         Console.WriteLine(response);
 
-                        // E-Mail senden
+                        // email
                         writer.WriteLine("HELO mailClient");
                         response = reader.ReadLine();
                         Console.WriteLine(response);
 
-                        writer.WriteLine("MAIL FROM: sender@mailClient.com");
+                        writer.WriteLine("MAIL FROM: spam@spam.com");
                         response = reader.ReadLine();
                         Console.WriteLine(response);
 
-                        writer.WriteLine("RCPT TO: recipient@mailServer.com");
+                        writer.WriteLine("RCPT TO: spam@lost.com");
                         response = reader.ReadLine();
                         Console.WriteLine(response);
 
@@ -47,9 +47,9 @@ namespace EmailSender
                         response = reader.ReadLine();
                         Console.WriteLine(response);
 
-                        writer.WriteLine("Subject: Test-E-Mail");
+                        writer.WriteLine("Subject: Spam");
                         writer.WriteLine();
-                        writer.WriteLine("Dies ist eine Test-E-Mail.");
+                        writer.WriteLine("spamspam.");
                         writer.WriteLine(".");
                         response = reader.ReadLine();
                         Console.WriteLine(response);
@@ -58,10 +58,10 @@ namespace EmailSender
                         response = reader.ReadLine();
                         Console.WriteLine(response);
 
-                        // Verbindung beenden
+                        // close
                         client.Close();
 
-                        // Pause einlegen, um 1000 Anfragen pro Sekunde zu garantieren
+                        // pause 
                         Thread.Sleep(interval);
                     }
                 }).Start();
