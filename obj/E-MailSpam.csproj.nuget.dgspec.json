@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fbenn\\Documents\\E-MailSpam\\E-MailSpam.csproj": {}
+    "C:\\Users\\fbenn\\Documents\\Code\\E-MailSpam\\E-MailSpam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fbenn\\Documents\\E-MailSpam\\E-MailSpam.csproj": {
+    "C:\\Users\\fbenn\\Documents\\Code\\E-MailSpam\\E-MailSpam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fbenn\\Documents\\E-MailSpam\\E-MailSpam.csproj",
+        "projectUniqueName": "C:\\Users\\fbenn\\Documents\\Code\\E-MailSpam\\E-MailSpam.csproj",
         "projectName": "E-MailSpam",
-        "projectPath": "C:\\Users\\fbenn\\Documents\\E-MailSpam\\E-MailSpam.csproj",
+        "projectPath": "C:\\Users\\fbenn\\Documents\\Code\\E-MailSpam\\E-MailSpam.csproj",
         "packagesPath": "C:\\Users\\fbenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fbenn\\Documents\\E-MailSpam\\obj\\",
+        "outputPath": "C:\\Users\\fbenn\\Documents\\Code\\E-MailSpam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bxwwROSLWfy/aPEHqWYBhiQak/RL/50Jd2oFvUynb4oqZUn3hKWLgBg7sE+FGNMcS2msYJzSFonwVNRlV5LIRQ==",
+  "dgSpecHash": "i7Jfhl815Vrny467lDbpLrX25wYirxlGVXkzYNQhdrwYx9DAgHHlRJ/bqrDu22hUBN1lH08glBoeQ83aQndiMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fbenn\\Documents\\E-MailSpam\\E-MailSpam.csproj",
+  "projectFilePath": "C:\\Users\\fbenn\\Documents\\Code\\E-MailSpam\\E-MailSpam.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

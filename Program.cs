@@ -17,19 +17,20 @@ namespace EmailSender
             {
                 new Thread(() =>
                 {
+                    // Verbindung zum E-Mail-Server herstellen
+                    TcpClient client = new TcpClient("10.0.42.4", 25);
+                    Stream stream = client.GetStream();
+                    StreamReader reader = new StreamReader(stream);
+                    StreamWriter writer = new StreamWriter(stream);
+                    writer.AutoFlush = true;
+
+                    // Handshake mit dem Server
+                    string response = reader.ReadLine();
+                    Console.WriteLine(response);
+                    
                     for (int i = 0; i < requestCount / threadCount; i++)
                     {
-                        // connect to server
-                        TcpClient client = new TcpClient("10.0.0.23", 25);
-                        Stream stream = client.GetStream();
-                        StreamReader reader = new StreamReader(stream);
-                        StreamWriter writer = new StreamWriter(stream);
-                        writer.AutoFlush = true;
-
-                        // Handshake mit dem Server
-                        string response = reader.ReadLine();
-                        Console.WriteLine(response);
-
+                    
                         // email
                         writer.WriteLine("HELO mailClient");
                         response = reader.ReadLine();
@@ -49,7 +50,7 @@ namespace EmailSender
 
                         writer.WriteLine("Subject: Spam");
                         writer.WriteLine();
-                        writer.WriteLine("spamspam.");
+                        writer.WriteLine("spamspam");
                         writer.WriteLine(".");
                         response = reader.ReadLine();
                         Console.WriteLine(response);
@@ -58,12 +59,17 @@ namespace EmailSender
                         response = reader.ReadLine();
                         Console.WriteLine(response);
 
-                        // close
-                        client.Close();
-
                         // pause 
                         Thread.Sleep(interval);
                     }
+                    
+                    writer.WriteLine("QUIT");
+                    response = reader.ReadLine();
+                    Console.WriteLine(response);
+
+                    // Verbindung beenden
+                    client.Close();
+
                 }).Start();
             }
 
